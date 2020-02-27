@@ -1,0 +1,421 @@
+*{
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;    
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+.slider-bullets{
+    position: fixed;
+    bottom:50px;
+    z-index: 1;
+    /* display: flex; */
+    left:72%;
+
+}
+.slider-bullets div{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border:2px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.slider-lenta-item{
+    /* display: flex; */
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allpage{
+    position: relative;
+    margin: 0 auto;
+}
+.background{
+    z-index: 300;
+}
+
+/* текст */
+.Intro{
+    z-index: 1;
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family:'Montserrat', Times, serif;
+}
+.Intro_ice1{
+    z-index: 1;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 17%;
+    left: 18%;
+    font-family:'Montserrat', Times, serif;
+    font-weight: 700;
+}
+.Intro_ice2{
+    z-index: 1;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 11.7%;
+    left: 60%;
+    font-family:'Montserrat', Times, serif;
+    font-weight: 700;
+}
+.Intro_ice3{
+    z-index: 1;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 20.7%;
+    left: 75%;
+    font-family:'Montserrat', Times, serif;
+    font-weight: 700;
+}
+.Intro_ice4{
+    z-index: 1;
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    position: absolute;
+    top: 21%;
+    left: 35%;
+    font-family:'Montserrat', Times, serif;
+    font-weight: 700;
+}
+.Intro_2{
+    z-index: 1;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    font-family:'Montserrat', Times, serif;
+}
+
+.aside{
+    position:fixed;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dco);
+    padding: 5px;
+    margin-left: 5px;
+    
+}
+.aside__a{
+    text-decoration: none;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    color:white;
+    text-align: center;
+}
+
+/* кнопка импульса */
+.mgo-widget-call_pulse {
+    height: 30px;
+    width: 30px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    top: -1670px;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .75;
+    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    position: absolute;
+    left: 320px;
+    z-index: 250;
+}
+.mgo-widget-call_pulse:after,
+.mgo-widget-call_pulse:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    left: 25px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+    z-index: 250;
+}
+.mgo-widget-call_pulse:before {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    z-index: 250;
+}
+.mgo-widget-call_pulse:after {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+    z-index: 250;
+}
+/* кнопка1 */
+.mgo-widget-call_pulse1 {
+    height: 30px;
+    width: 30px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    top: -2030px;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .75;
+    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    position: absolute;
+    right: 42%;
+    z-index: 250;
+}
+.mgo-widget-call_pulse1:after,
+.mgo-widget-call_pulse1:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    left: 25px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+    z-index: 250;
+}
+.mgo-widget-call_pulse1:before {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    z-index: 250;
+}
+.mgo-widget-call_pulse1:after {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+    z-index: 250;
+}
+/* кнопка2 */
+.mgo-widget-call_pulse2 {
+    height: 30px;
+    width: 30px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    top: -1430px;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .75;
+    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    position: absolute;
+    left: 555px;
+    z-index: 250;
+}
+.mgo-widget-call_pulse2:after,
+.mgo-widget-call_pulse2:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    left: 25px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+    z-index: 250;
+}
+.mgo-widget-call_pulse2:before {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    z-index: 250;
+}
+.mgo-widget-call_pulse2:after {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+    z-index: 250;
+}
+/* кнопка3 */
+.mgo-widget-call_pulse3 {
+    height: 30px;
+    width: 30px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    top: -1470px;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .75;
+    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    position: absolute;
+    left: 960px;
+    z-index: 250;
+}
+.mgo-widget-call_pulse3:after,
+.mgo-widget-call_pulse3:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    top: 0;
+    left: 25px;
+    background-color: #fb8702;
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+    z-index: 250;
+}
+.mgo-widget-call_pulse3:before {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    z-index: 250;
+}
+.mgo-widget-call_pulse3:after {
+    margin: auto 0 auto -32.5px;
+    height: 45px;
+    width: 45px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+    z-index: 250;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* position: fixed; на три точки справа будут!!!! */
+
+
+
+
+/* Анимация пульса айсберга */
+@-webkit-keyframes shake {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-2px);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-2px);
+  }
+}
+
+@keyframes shake {
+  0% {
+     transform: translateX(0);
+  }
+  25% {
+     transform: translateX(-2px);
+  }
+  50% {
+     transform: translateX(0);
+  }
+  100% {
+     transform: translateX(-2px);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
