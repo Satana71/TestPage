@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="bulma.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic" rel="stylesheet">
     <script src="code.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Testpage</title>
 </head>
 <body>
@@ -18,17 +23,12 @@
             <span class="mgo-widget-call_pulse1"></span>
             <span class="mgo-widget-call_pulse2"></span>
             <span class="mgo-widget-call_pulse3"></span>
-            <p class="Intro_ice1">Гипогликемия</pclass="Intro">
-            <p class="Intro_ice2">Цель по HbA1c</pclass="Intro">
-            <p class="Intro_ice3">СС риски</pclass="Intro">
-            <p class="Intro_ice4">Осложнения СД</pclass="Intro">
+            <p class="Intro_ice1">Гипогликемия</p class="Intro">
+            <p class="Intro_ice2">Цель по HbA1c</p class="Intro">
+            <p class="Intro_ice3">СС риски</p class="Intro">
+            <p class="Intro_ice4">Осложнения СД</p class="Intro">
                 <p class="Intro_2" id="info">Основа терапии - патогенез СД2</p>
     
-                <!-- <aside class="aside">
-                    <a href="#main" class="aside__a">главная</a>
-                    <a href="#info" class="aside__a"> о нас</a>
-                    <a href="#cont" class="aside__a"> контакты</a>
-                </aside> -->
                 <div class="slider">
                 <div class="slider-bullets">
                     <div id="0"> </div>
@@ -39,13 +39,80 @@
                 <div class="slider-lenta-item real" id="sl_0"></div>
                 <div class="slider-lenta-item real" id="sl_1" ></div>
                 <div class="slider-lenta-item real" id="sl_2"></div>
-     </div>
     
-    
-    
-    
+
+        <img class="icecube_1" src="/img/bigice.png" alt="">
+        <img class="icecube_2" src="/img/ice.png" alt="">
+        <img class="icecube_3" src="/img/microice.png" alt="">
+        <img class="icecube_4" src="/img/smallice.png" alt="">
+                  
+
     
         
+    </div>  
     </div>
+
+
+<!-- Основной блок. Располагается по центру. Курсор имеет вид <—> -->
+<div style='text-align: center; cursor: e-resize; width: 1200px;'>
+
+    <!-- Изображение -->
+           <img id="image" src="img/1906.PNG" onClick="imgsrc();"/>
+    
+         </div>
+    
+    <!-- Скрипт -->
+        <script language="javascript">
+    
+    // <!-- Переменная i показывает, какое по счёту изображение отображается на экране -->
+            var i=1;
+    
+    // <!-- Вывод изображения -->
+            var image=document.getElementById("image");
+           document.getElementById("i").innerHTML = i;
+    
+    //    <!-- Массив с изображениями -->
+            var imgs=new Array('img/1998.PNG', '', 'img/2009.PNG', 'img/2016.png');
+    
+    
+    //    <!-- Ширина экрана-->
+            var w = screen.width;
+    
+    //    <!--Местоположение курсора по оси x-->
+            var p = clientX;
+    
+    //    <!-- Функция листания изображений -->
+        function imgsrc() {
+    
+    // <!-- Если курсор ближе к правому краю экрана, изображения листаются вперёд -->
+              if(p > (w / 2)){
+    
+           if (i < 3) {
+                i++;
+                image.src=imgs[i];  
+                }
+    
+              else {
+                i = 1;
+                  image.src=imgs[i];
+                  }
+              }
+    
+    // <!-- Если курсор ближе к левому краю экрана, изображения листаются назад -->
+          else{
+    
+                  if (i > 1) {
+                i = i - 1;
+                image.src=imgs[i];
+                }
+    
+              else {
+                i = 3;
+                  image.src=imgs[i];
+                  }
+              }
+          }
+        </script>
+
 </body>
 </html>
